@@ -57,7 +57,7 @@ const createEmailBody = (data) => {
 const sendEmail = (data) => {
 	transporter.sendMail({
 		from: "contact@alex-c.dev",
-		to: "alx.charbo@gmail.com",
+		to: ["alx.charbo@gmail.com", "fanfanmc@hotmail.fr"],
 		subject: `Journal de Monaco ${jdm[0].number} - Avis de recrutement`,
 		html: data,
 	});
